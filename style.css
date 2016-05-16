@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+}
+.wrap{
+	padding: 30px;
+	text-align: center;
+}
+
+
+/*Mobile first*/
+.circle{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background: blue;
+}
+@media screen and (min-width: 480px)
+{
+	.circle{
+		background: red;
+	}
+}
+@media screen and (min-width: 768px)
+{
+	.circle{
+		background: green;
+	}
+}
+@media screen and (min-width: 992px)
+{
+	.circle{
+		background: yellow;
+	}
+}
+
+/*Desctop first*/
+.circle-alt{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background: yellow;
+}
+@media screen and (max-width: 992px)
+{
+	.circle-alt{
+		background: green;
+	}
+}
+@media screen and (max-width: 767px)
+{
+	.circle-alt{
+		background: red;
+	}
+}
+@media screen and (max-width: 479px)
+{
+	.circle-alt{
+		background: blue;
+	}
+}
